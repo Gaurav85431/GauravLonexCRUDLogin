@@ -35,7 +35,9 @@ const update_data = async (req, res) => {
   try {
 
 
-    const id = req.body.id;
+    // const id = req.body.id;
+    const id = req.params.id;
+    // we have to pass id as a prameter in url
 
     const ValidID = await user.findOne({ _id: id });
 

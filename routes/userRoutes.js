@@ -48,7 +48,8 @@ user_routes.post('/insertData', auth, upload.single('images'), user_controller.i
 
 // UPDATE API::-  PUT
 
-user_routes.put('/updateData', auth, upload.single('images'), user_controller.update_data);
+//user_routes.put('/updateData', auth, upload.single('images'), user_controller.update_data);
+user_routes.put('/updateData/:id', auth, upload.single('images'), user_controller.update_data);
 
 // Delete API::- DELETE
 
